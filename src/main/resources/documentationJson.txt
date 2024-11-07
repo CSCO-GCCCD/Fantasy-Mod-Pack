@@ -1,0 +1,62 @@
+URGENT: IGNORE THE DEV.TXT FILES THOSE WERE FOR FORMATTING ISSUES WITH THE FILES. DO NOT EDIT THEM OR REMOVE THEM
+URGENT 2: IF I DO NOT MENTION A JSON FILE IN HERE THAT MEANS YOU DO NOT EDIT IT UNDER ANY MEANS.
+What each Json Does:
+
+
+First, every block and item must have their own unique Json in order to have their own unique block states,
+there is a way to automate this but I have not done this yet.
+
+Secondly, within each of these jsons you must declare
+
+{
+  "variants": {
+    "": {
+      "model": "tutorialmod:block/alexandrite_block"
+    }
+  }
+}
+
+This format is for blocks in minecraft and how to add them.
+
+This is found in blockstates.
+
+Next is Lang:
+{
+  "item.tutorialmod.alexandrite": "Alexandrite",
+  "item.tutorialmod.raw_alexandrite": "Raw Alexandrite",
+
+
+
+  "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
+  "block.tutorialmod.raw_alexandrite_block": "Raw block of Alexandrite"
+}
+
+this is the format, this is how you declare the name of the block and how it is spelt within the game this is what pops
+up when you gain the item in minecraft.
+
+Models:
+
+Block
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/alexandrite_block"
+  }
+}
+
+This is the format for blocks that have all of the same textures for all sides. this would be in the block folder in
+models.
+
+Item:
+
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "tutorialmod:item/alexandrite"
+  }
+}
+
+This is the format for items and their texture that appears in the game.
+
+Textures:
+This is where you upload the PNGs of the ITEMs and BLOCKs make sure you separate them. Put them in the respective folders
